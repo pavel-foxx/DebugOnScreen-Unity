@@ -1,4 +1,21 @@
 # DebugOnScreen Unity3D
-Load this files to your Unity Project
+Load files to your Unity Project
 
-![ExampleMethod](https://psv4.userapi.com/c848028/u501150627/docs/d13/e3e66a2b0344/image.png)
+Use this code:
+
+```csharp
+using DebugOnScreen;
+
+public class DebugOnScreenExample
+{
+    private void ExampleMethod()
+    {
+        Debuger.Log("Here is Example Message #1");
+        Debuger.Log("Here is Example Message #2");
+        Debuger.Log("Here is Example Message #3");
+    }
+}
+```
+To get this result:
+
+![Result](http://visoft.pro/DebugOnScreen-Result.png)
