@@ -24,6 +24,8 @@ namespace DebugOnScreen
         {
             Debug.Log(text);
 
+            if (!Debug.isDebugBuild)
+                return;
             if (instance == null)
                 _instance = Instantiate(Resources.Load<Debuger>(canvasInstanceInResources));
 
@@ -38,6 +40,8 @@ namespace DebugOnScreen
         {
             Debug.LogError(text);
 
+            if (!Debug.isDebugBuild)
+                return;
             if (instance == null)
                 _instance = Instantiate(Resources.Load<Debuger>(canvasInstanceInResources));
 
